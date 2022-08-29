@@ -1,0 +1,35 @@
+@import url(style.css);
+
+#header {
+    height: 100px;
+    width: 98%;
+    background: #999;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: center;
+    position: fixed;
+}
+
+#video {
+    height: calc(600px + var(--pc-header-height));
+    background: #888;
+}
+
+.category {
+    height: 500px;
+    display: flex;
+    margin-top: 30px;
+}
+
+#category1 .cont1, .cont2, .cont3, .cont4 {
+    width: 450px;
+    background: #777;
+}
+
+.banner {
+    height: 200px;
+    background: #666;
+    margin-top: 30px;
+}

@@ -1,0 +1,26 @@
+:root {
+    --pc-header-height: 100px;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+#wrap {
+    width: 98%;
+}
