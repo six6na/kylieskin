@@ -5,30 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYLIESKIN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pc.css">
+
+    <link 
+    rel="stylesheet" 
+    href="./css/mobile.css" 
+    media="screen and (max-width: 820px)"
+    >
+
+    <link 
+    rel="stylesheet" 
+    href="./css/pc.css"
+    media="screen and (min-width: 821px)"
+  >
 </head>
 <body>
-    <div id="wrap">
+    <div class="wrap">
        <header id="header">
-        <h1>헤더</h1>
+        <nav>
+            <div class="nav-l nav">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" alt="KYLIESKIN BY KYLIE JENNER">
+            </a>
+            <div class="nav-r nav">
+                <a href="#">cart</a>
+                <a href="#">mypage</a>
+            </div>
+        </nav>
        </header>
+
        <div id="video">
         <h2>영상</h2>
        </div>
-       <div id="category1" class="category">
-        <div class="cont1">cont1</div>
-        <div class="cont2">cont2</div>
-        <div class="cont3">cont3</div>
-        <div class="cont4">cont4</div>
-       </div>  
-       <div class="banner" id="banner1"></div>
-       <div id="category2" class="category"></div>
+
+       <div class="swiper mySwiper category" id="category1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">cont 1</div>
+          <div class="swiper-slide">cont 2</div>
+          <div class="swiper-slide">cont 3</div>
+          <div class="swiper-slide">cont 4</div>
+        </div>
+      </div> 
+
+       <div class="banner" id="banner1">
+        상품카테고리
+       </div>
+
+       <div class="swiper mySwiper category" id="category2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">cont 1</div>
+          <div class="swiper-slide">cont 2</div>
+          <div class="swiper-slide">cont 3</div>
+          <div class="swiper-slide">cont 4</div>
+          <div class="swiper-slide">cont 5</div>
+          <div class="swiper-slide">cont 6</div>
+        </div>
+      </div>
+
+       <div class="brandBanner">브랜드 이미지 배너</div>
+       
        <div class="banner" id="banner2"></div>
-       <div id="category3" class="category"></div>
-       <div id="value"></div>
-       <div id="newTo"></div>
-       <footer id="footer"></footer>
+
+       <div class="swiper mySwiper category" id="category3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">cont 1</div>
+          <div class="swiper-slide">cont 2</div>
+          <div class="swiper-slide">cont 3</div>
+          <div class="swiper-slide">cont 4</div>
+        </div>
+      </div>
+
+       <div id="value">
+        <div class="valueWrap">
+            <div class="tabMenu"></div>
+            <div class="imgsec"></div>
+        </div>
+       </div>
+
+       <div id="newTo">
+        <img src="#" alt="#">
+        <div class="newTo-bt">
+            <div class="newTo-txt">
+                <h3>NEW TO KYLIE SKIN?</h3>
+                <p>Start here with Kylie's daily skincare routine.</p>
+            </div>
+            <button class="tryBtn">TRY IT NOW</button>    
+        </div>
+       </div>
+       
+       <footer id="footer">
+        <a href="#" class="f-logo"><img src="#" alt="#"></a>
+        <div class="fMenu">
+            <div class="FLmenu">
+                email service
+            </div>
+            <div class="FrMenu">
+                legal social copyright
+            </div>
+        </div>
+       </footer>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

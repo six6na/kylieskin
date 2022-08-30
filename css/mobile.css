@@ -1,7 +1,8 @@
 @import url(style.css);
+@import url(./swiper.css);
 
 .wrap {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -9,7 +10,7 @@ header {
     background: #999;
     position: fixed;
     top: 1rem;
-    width: 80%;
+    width: 95%;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -22,18 +23,32 @@ header nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 18px;
     font-weight: 400;
 }
 
-.nav-l {
+.nav-l, .nav-r {
+    display: none;
+}
+
+/* .nav-l {
     margin-left: 30px;
     display: flex;
 }
 
 .nav-r {
     margin-right: 30px;
+} */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
 }
 
 .nav a {
@@ -43,7 +58,7 @@ header nav {
 #video {
     width: 100%;
     background: #888;
-    height: 600px;
+    height: 220px;
     margin-top: 1rem;
     border-radius: 15px;
 }
@@ -57,7 +72,7 @@ header nav {
 
 .brandBanner {
     width: 100%;
-    height: 500px;
+    height: 220px;
     background: #555;
     border-radius: 15px;
     margin: 30px 0;
@@ -65,7 +80,7 @@ header nav {
 
 .valueWrap {
     width: 100%;
-    height: 700px;
+    height: 280px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -73,21 +88,21 @@ header nav {
 
 .tabMenu {
     width: calc(99% / 2);
-    height: 700px;
+    height: 280px;
     outline: 1px solid #444;
     border-radius: 15px;
 }
 
 .imgsec {
     width: calc(99% / 2);
-    height: 700px;
+    height: 280px;
     background: #444;
     border-radius: 15px;
 }
 
 #newTo {
     width: 100%;
-    height: 600px;
+    height: 300px;
     background: #333;
     border-radius: 15px;
     display: flex;
@@ -99,14 +114,14 @@ header nav {
 .newTo-bt {
     background: #555;
     width: 100%;
-    height: 150px;
+    height: 100px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 footer {
     width: 100%;
-    height: 320px;
+    height: 180px;
     background: #222;
     border-radius: 15px;
     margin-bottom: 1rem;
@@ -119,7 +134,7 @@ footer {
 
 .fMenu {
     width: 100%;
-    height: 160px;
+    height: 90px;
     background: #666;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -135,7 +150,6 @@ footer {
     width: 630px;
 }
 
-
 /* swiper */
 .swiper {
     width: 100%;
@@ -149,8 +163,8 @@ footer {
     font-size: 18px;
     background: #666;
     border-radius: 15px;
-    width: calc(100% / 3);
-    height: 610px;
+    width: calc(100%);
+    height: 410px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -169,19 +183,19 @@ footer {
 
   .swiper-slide img {
     display: block;
-    width: calc(100% / 3);
+    width: calc(100%);
     height: 610px;
     object-fit: cover;
   }
 
   @media screen {
     .swiper-slide img {
-        max-width: calc(100% / 3);
-        max-height: 610px;
+        max-width: calc(100%);
+        max-height: 310px;
     }
 
     .swiper-slide {
-        max-width: calc(100% / 3.2);
-        max-height: 610px;
+        max-width: calc(100% / 1.2);
+        max-height: 310px;
     }
   }
