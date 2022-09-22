@@ -51,6 +51,7 @@ header nav {
     height: 600px;
     margin-top: 1rem;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .banner {
