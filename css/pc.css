@@ -36,6 +36,10 @@ header nav {
     display: flex;
 }
 
+.toggleBtn {
+    display: none;
+}
+
 .nav-r {
     margin-right: 30px;
 }
@@ -45,9 +49,12 @@ header nav {
     color: #E1B0C2;
 }
 
+.nav-r a {
+    font-size: 24px;
+}
+
 #video img {
     width: 100%;
-    /* background: #888; */
     height: 600px;
     margin-top: 1rem;
     border-radius: 15px;
@@ -85,6 +92,7 @@ header nav {
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.15);
 }
 
@@ -123,6 +131,7 @@ header nav {
     line-height: 60px;
     text-align: center;
     border-bottom: 1px solid #E1B0C2;
+    cursor: pointer;
 }
 
 .tabBtns p:last-child {
@@ -407,12 +416,9 @@ input[type="checkbox"]:checked::after {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #666; */
     border-radius: 15px;
     width: calc(100% / 3);
-    /* height: 610px; */
     border-radius: 15px;
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -455,16 +461,16 @@ input[type="checkbox"]:checked::after {
 @media screen {
     .swiper-slide img {
         max-width: 100%;
-        /* max-height: 610px; */
     }
 
     .swiper-slide {
         max-width: calc(100% / 3.2);
-        /* max-height: 610px; */
     }
 }
 
-#banner1 {
+#banner1,
+#banner2
+{
     display: flex;
 }
 
@@ -478,9 +484,21 @@ input[type="checkbox"]:checked::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.cont1 {
     background: #D9CBDE;
 }
 
-.banner-cont img {
+.cont2 {
+    background: #DFB6BB;
+}
+
+.banner-cont .img1 img {
     width: 10%;
+}
+
+.banner-cont .img2 {
+    width: 25%;
 }
